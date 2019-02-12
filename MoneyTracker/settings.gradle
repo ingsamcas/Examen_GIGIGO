@@ -1,6 +1,0 @@
-include ':app',':libs',':libs2',':databases',':backendless',':infinitecycleviewpager'
-project(':libs').projectDir=new File('/Users/usuario/AndroidStudioProjects/library/libs')
-project(':libs2').projectDir=new File('/Users/usuario/AndroidStudioProjects/library/libs2')
-project(':databases').projectDir=new File('/Users/usuario/AndroidStudioProjects/library/databases')
-project(':backendless').projectDir=new File('/Users/usuario/AndroidStudioProjects/library/backendless')
-project(':infinitecycleviewpager').projectDir=new File('/Users/usuario/AndroidStudioProjects/library/InfiniteCycleViewPager-master/infinitecycleviewpager')
