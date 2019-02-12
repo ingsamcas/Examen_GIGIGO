@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/h_topLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <eclipseapps.mobility.parkeame.ui.CameraSourcePreview
+        android:id="@+id/h_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <eclipseapps.mobility.parkeame.ui.GraphicOverlay
+            android:id="@+id/h_graphicOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </eclipseapps.mobility.parkeame.ui.CameraSourcePreview>
+
+</LinearLayout>

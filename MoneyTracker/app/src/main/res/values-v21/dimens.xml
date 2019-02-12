@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radius">90dp</dimen>
+    <dimen name="Text_Field">18sp</dimen>
+    <dimen name="circle_margintop">15dp</dimen>
+    <dimen name="a_padding_left">20dp</dimen>
+    <dimen name="a_paddingtop">30dp</dimen>
+    <dimen name="a_list_marginTop">25dp</dimen>
+    <dimen name="a_list_dividerheight">20dp</dimen>
+    <dimen name="nuevacuenta_marginsaldo">15dp</dimen>
+    <dimen name="movmentlist_vacummessageidth">300dp</dimen>
+    <dimen name="movmentlist_vacummessageheight">350dp</dimen>
+    <dimen name="movmentlist_vacummessage_textsize">20sp</dimen>
+    <dimen name="movmentlist_vacummessage_margintop">5dp</dimen>
+</resources>

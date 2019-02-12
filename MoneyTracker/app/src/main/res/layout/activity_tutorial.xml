@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BB000000">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/tutorial_circleremark_width"
+        android:layout_height="@dimen/tutorial_circleremark_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+
+        android:background="@android:color/transparent"
+        >
+        <RelativeLayout
+            android:id="@+id/activity_tutorial_tip"
+            android:orientation="vertical" android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/gradient_circular_drawable_blanco"
+            android:layout_marginLeft="54dp"
+            android:layout_marginTop="10dp">
+
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/howadd_flecha"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/howadd_floatbutton"
+        android:layout_alignBottom="@+id/howadd_floatbutton"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/transparent"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/howadd_floatbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/mas_blanco"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="16dp"/>
+<RelativeLayout
+    android:id="@+id/howadd_explanation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/transparent">
+    <eclipseapps.android.customviews.TextViewRoboto
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agrega tus movimientos"
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"
+        android:gravity="left"
+        android:background="@android:color/transparent"
+        android:id="@+id/howadd_title"
+        android:layout_marginBottom="20dp"/>
+
+    <eclipseapps.android.customviews.TextViewRoboto
+        android:layout_below="@+id/howadd_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tutoria_nuevosgastos"
+        android:textSize="@dimen/tutorial_text_size"
+        android:textColor="@android:color/white"
+        android:background="@android:color/transparent"
+        android:gravity="left"
+        android:id="@+id/howadd_title_explain"/>
+    <Button
+        android:id="@+id/activity_tutorial_entendido"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/howadd_title_explain"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:text="OK"
+        android:textSize="19sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"/>
+</RelativeLayout>
+
+</RelativeLayout>
+
+

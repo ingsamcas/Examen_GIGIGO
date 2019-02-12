@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/premium_title_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <eclipseapps.android.customviews.TextViewRoboto
+                android:id="@+id/premium_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:text="Titulo"/>
+            <View
+                android:background="@android:color/white"
+                android:id="@+id/premium_title_progressbar"
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+        </LinearLayout>
+
+        <com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager
+            android:layout_below="@+id/premium_title_container"
+            android:id="@+id/premium_benefitsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/premiumdialog_height" />
+        <eclipseapps.android.customviews.FontFitTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/premium_precio"
+            android:lines="1"
+            app:maxWidth="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/premium_benefitsContainer"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/box_plus_price"
+            android:padding="5dp"
+            android:text="Comprar"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:id="@+id/sharereontwitterbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/premium_discount"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:background="#00aced"
+            android:padding="5dp">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignTop="@+id/premium_discount"
+                android:layout_toLeftOf="@+id/premium_discount"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/twittericon"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compartir en Twitter"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/premium_discount"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/premium_precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:text="Comparte Denario en Twitter\n y obten % de descuento"/>
+    </RelativeLayout>
+
+</RelativeLayout>

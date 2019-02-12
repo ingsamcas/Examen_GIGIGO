@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+<eclipseapps.android.customviews.ImageViewProportion xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:baseDimen="FromWIDTH"
+    app:baseDimenPercent="1"
+    android:id="@+id/fragment_pager_list_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="@color/colorAccent"/>
+    <TextView
+        android:layout_below="@+id/fragment_pager_list_image"
+        android:id="@+id/tutorial_invoice_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
+        android:text="@string/tutorial_invoices"
+        android:textSize="18sp"
+        android:background="@color/colorAccent"
+        android:paddingBottom="10dp"/>
+</RelativeLayout>

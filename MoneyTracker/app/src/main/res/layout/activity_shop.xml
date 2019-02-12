@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+<ImageView
+    android:id="@+id/activity_shop_benefits"
+    android:layout_width="@dimen/premiumwidth"
+    android:layout_height="@dimen/premiumheight"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="60dp"/>
+    <Button
+        android:id="@+id/activty_shop_getPremium"
+        android:layout_width="64dp"
+        android:layout_height="55dp" />
+</LinearLayout>

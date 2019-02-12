@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/a_padding_left"
+    android:paddingTop="@dimen/a_paddingtop">
+    <LinearLayout
+        android:id="@+id/f_child_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/f_main_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mis Autos"
+            android:textColor="@android:color/darker_gray"/>
+        <eclipseapps.android.customviews.ListViewMaxHeight
+            android:id="@+id/f_listaautosregistrados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/a_list_marginTop"
+            android:dividerHeight="@dimen/a_list_dividerheight"
+            android:divider="@android:color/transparent"
+            custom:maxHeightPercent=".4"/>
+        <TextView
+            android:id="@+id/f_agregarauto"
+            android:layout_width="match_parent"
+            android:minWidth="70dp"
+            android:layout_height="wrap_content"
+            android:text="Agregar Auto"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginTop="@dimen/a_list_marginTop"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

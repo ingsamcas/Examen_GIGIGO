@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:text="Categoria"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/j_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:focusable="false"
+        android:linksClickable="true"
+        android:autoLink="web"
+        android:textColor="@color/colorPrimary"
+        />
+    <android.support.v7.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:theme="@style/MySwitch"
+        android:id="@+id/j_enable"
+        android:textOff="Desactivado"
+        android:textOn="Activado"
+        android:showText="true"
+        android:textColor="@android:color/white"
+        android:checked="true"
+        android:focusable="false"
+        />
+
+</RelativeLayout>

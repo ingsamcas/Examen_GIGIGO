@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="MY_PERMISSIONS_REQUEST_SEND_SMS">13</integer>
+    <integer name="MY_PERMISSIONS_REQUEST_RECEIVE_SMS">14</integer>
+    <integer name="version_localtracker">1</integer>
+</resources>

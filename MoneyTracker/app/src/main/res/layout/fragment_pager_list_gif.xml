@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent">
+    <eclipseapps.android.customviews.RelativeLayoutMaxHeight
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fragment_pager_list_gif_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:maxHeightPercent=".4">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/editdelete"
+            android:id="@+id/gif"/>
+    </eclipseapps.android.customviews.RelativeLayoutMaxHeight>
+
+    <TextView
+        android:padding="10dp"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/fragment_pager_list_gif_container"
+        android:id="@+id/fragment_pager_list_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
+        android:text="@string/tutorial_invoices" />
+
+    <TextView
+        android:id="@+id/fragment_pager_list_button_next"
+        android:layout_below="@+id/fragment_pager_list_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:text="Entendido"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/box_plus_white"
+        android:minWidth="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

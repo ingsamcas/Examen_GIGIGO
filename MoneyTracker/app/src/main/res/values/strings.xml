@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">Denario</string>
+    <string name="action_settings">Settings</string>
+    <string name="dialogfragment_acept">Aceptar</string>
+    <string name="dialogfragment_cancel">Cancelar</string>
+    <string name="dialogfragment_newbank">Cuenta Nueva</string>
+    <string name="dialogfragment_newtype">Nuevo tipo</string>
+    <string name="Cash">Efectivo</string>
+    <string name="newAccount">Nueva Cuenta++</string>
+    <string name="movement_registred">Movimiento Registrado</string>
+    <string name="movement_add_other">Agregar otro</string>
+    <string name="No">No</string>
+    <string name="title_descriptionmov">Descripción</string>
+    <string name="Motive">Etiquetas</string>
+    <string name="title_basicmov">Movimiento</string>
+    <string name="quantity">Cantidad</string>
+    <string name="date">Fecha</string>
+    <string name="movement_money_direction">Gasto o abono?</string>
+    <string name="plusmoney">Más dinero</string>
+    <string name="lessmoney">Menos Dinero</string>
+
+
+    <array name="tags">
+        <item name="normalspent_outcoming">Gasto Corriente</item>
+        <item name="transport_outcoming">Transporte</item>
+        <item name="food_outcoming">Comida</item>
+        <item name="service_outcoming">Servicios</item>
+        <item name="home_outcoming">Hogar</item>
+        <item name="health_outcoming">Salud</item>
+        <item name="pet_outcoming">Mascotas</item>
+        <item name="transfer_outcoming">Transferencia</item>
+        <item name="debtpay_outcoming">Pago de deuda</item>
+        <item name="education_outcoming">Educación</item>
+        <item name="children_outcoming">Hijos/Familia</item>
+        <item name="donation_outcoming">Donación</item>
+        <item name="lending_outcoming">Prestamo</item>
+        <item name="enterteinment_outcoming">Entretenimiento</item>
+    </array>
+    <array name="Periodos">
+        <item name="Diario">Diario</item>
+        <item name="Semanal">Semanal</item>
+        <item name="Quincenal">Quincenal</item>
+        <item name="Mensual">Mensual</item>
+        <item name="Anual">Anual</item>
+        <item name="Personalizado">Personalizado</item>
+    </array>
+    <string name="other_outcoming"> Crear etiqueta </string>
+    <string name="databasename">DBSmartWallet.db3</string>
+    <string name="cuenta">Cuenta</string>
+    <string name="cuenta_nueva">Cuenta Nueva</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="cash">Efectivo</string>
+    <string name="action_edit">Editar</string>
+    <string name="nueva_categoria">Nueva Categoría</string>
+    <string name="filtro">Filtro</string>
+    <string name="All">Todas...</string>
+    <string name="Ninguna">Ninguno...</string>
+    <string name="Filtrarpor">Filtrar por..</string>
+    <string name="movimientostodos">Todos los movimientos</string>
+    <string name="limpiarfiltro">Limpiar Filtro</string>
+    <string name="distinto_cero">Introduce una cantidad distinta de cero</string>
+    <string name="almenos_unacategoria">Selecciona al menos una categoría</string>
+    <string name="cuentas">Cuentas</string>
+    <string name="introduce_un_correo_electronico">Introduce un correo electronico</string>
+    <string name="SeleccionaCuenta">Selecciona una cuenta</string>
+    <string name="RegistroGracias">"Gracias./nRecibiras un mensaje con los datos de tu cuenta en "</string>
+    <string name="problemaCompra">Ups!. Hubo un problema con la compra. Intentalo de nuevo.</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="reintentar">Intentar de nuevo</string>
+    <string name="GraciasPremium">Gracias por tu compra!.Disfruta la version Premium</string>
+    <string name="Imagenes">Imagenes</string>
+    <string name="Foto">Foto</string>
+    <string name="pdf_xml">PDF/xml</string>
+    <string name="acerca_de">Copyright (c) 2018</string>
+    <string name="acerca_de_texto">Denario es propiedad de Eclipse Apps S.A. de C.V.
+    Se prohíbe su redistribución parcial o total sin el consentimiento del desarrollador.\n
+    </string>
+    <string name="acerca_de_texto_2">Agradecemos a:\n\n
+        Henning Dodenhof por su excelente <a href="https://github.com/hdodenhof/CircleImageView">librería</a>\n(Licencia Apache versión 2)\n\n
+        Bartosz Lipiński por su excelente <a href="https://github.com/blipinsk/FlippableStackView" style="color: #004D40">librería</a> \n(Licencia Apache version 2)\n\n
+        Abdullaev Ozodrukh por su excelente <a href="https://github.com/ozodrukh/CircularReveal" style="color: #004D40">librería</a> \n(Licencia MIT)\n\n
+        Yarelegovich por su excelente <a href="https://github.com/yarolegovich/SlidingRootNav" style="color: #004D40">librería</a> \n(Licencia MIT)\n\n
+    Para sugerencias y aclaraciones escribir a ingsamcas@gmail.com</string>
+    <string name="acerca_de_texto_3"></string>
+    <string name="RFCs">RFC registrados</string>
+    <string name="agregar_rfcs">Agregar RFC</string>
+    <string name="rfc_manger">RFC</string>
+    <string name="RFC">RFC</string>
+    <string name="tomar_unafoto">Debes tomar al menos una fotografia nitida del ticket de consumo donde se muestre de manera clara toda la información posible que nos ayude a facturar</string>
+    <string name="misrfcs">Mis RFCs</string>
+    <string name="facturas">Facturas</string>
+    <string name="balance_currency">Mxn</string>
+    <string name="balance_amount">0.00</string>
+    <string name="movimientos">Lista de movimientos</string>
+    <string name="aplicar">Aplicar</string>
+    <string name="signo_dinero">$</string>
+    <string name="saldo_inicial">Saldo inicial</string>
+    <string name="sin_datos_en_el_periodo">Sin datos en el periodo</string>
+    <string name="califica_la_app">Califica la app</string>
+    <string name="presupuesto">Presupuestos</string>
+    <string name="agregar_presupuesto">Crear Presupuesto</string>
+    <string name="sabiasque">Sabias que...</string>
+    <string name="databasename_messages">Mensajes.sqlite</string>
+    <string name="channel_name">Notificaciones Denario</string>
+    <string name="channel_description">Recomendaciones que ayudaran a mejorar tus finanzas personales</string>
+    <string name="agregar_movimiento">Registrar gastos</string>
+    <string name="imagenes">[Imagenes]</string>
+    <string name="registra_rfc">Registra RFC nuevo</string>
+    <string name="fotoyrfc">Para que te enviemos la factura necesitamos al menos una foto de tu ticket y registrar un RFC</string>
+    <string name="seleccionar_rfc">Para que te enviemos la factura necesita seleccionar el RFC al que lo solicitas</string>
+    <string name="tutoria_nuevosgastos">Aquí podras agregar nuevos gastos e ingresos</string>
+    <string name="resumen">Resumen</string>
+    <string name="editar_cuenta">Editar Cuenta</string>
+    <string name="action_borrar_cuenta">Borrar cuenta</string>
+    <string name="categorias">Categorias</string>
+    <string name="accept">Aceptar</string>
+    <string name="tutorial_invoices">Solicita las facturas de tus consumos.\n\nGuarda el movimiento tomando una fotografia del ticket y
+        seleccionando el RFC al que quieres facturar el consumo. La factura te sera enviada más tarde a Denario"</string>
+    <string name="editar_categoria">Editar Categoría</string>
+    <string name="que_te_ha_parecido">Que te ha parecido Denario?</string>
+    <string name="configuration">Configuracion</string>
+    <string name="recuerdaregistar">Recuerda registrar tus gastos</string>
+    <string name="opciones">Opciones</string>
+    <string name="se_repite">Se repite</string>
+
+
+
+</resources>

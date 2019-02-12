@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <RelativeLayout
+        android:id="@+id/attachment_type_icon_camera"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/fondo_circulo_verde">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@android:drawable/ic_menu_camera" />
+    </RelativeLayout>
+    <TextView
+        android:layout_toRightOf="@+id/attachment_type_icon_camera"
+        android:id="@+id/textView_Imagenes"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="@string/imagenes"
+        android:gravity="left"
+        android:layout_marginLeft="5dp"
+        android:textSize="@dimen/textSize_cantidad_edit"
+        android:background="@android:color/transparent"
+        />
+    <eclipseapps.financial.moneytracker.customViews.GridViewEx
+        android:layout_toRightOf="@+id/textView_Imagenes"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/attachment_type_imageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="50dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"/>
+</RelativeLayout>
+

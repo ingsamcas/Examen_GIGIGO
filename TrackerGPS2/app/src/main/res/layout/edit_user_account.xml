@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/edit_user_account_User"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <ImageView
+        android:id="@+id/edit_user_account_imageUser"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        android:layout_centerVertical="true"/>
+    <eclipseapps.android.customviews.TextViewRoboto
+        app:robotofont="Roboto_Black"
+        android:layout_toRightOf="@+id/edit_user_account_imageUser"
+        android:id="@+id/edit_user_account_idUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Example.2@example.com"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>
+    <EditText
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/edit_user_account_telefono"
+        android:layout_below="@+id/edit_user_account_User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Numero Telefonico"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/edit_user_account_telefono"
+        android:layout_marginTop="15dp">
+        <eclipseapps.android.customviews.TextViewRoboto
+            android:id="@+id/edit_user_account_telefono_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:robotofont="Roboto_Medium"
+            android:text="Saldo por Recolección:"
+            android:layout_centerVertical="true"/>
+
+        <eclipseapps.android.customviews.TextViewRoboto
+            android:layout_toRightOf="@+id/edit_user_account_telefono_label"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:robotofont="Roboto_Bold"
+            android:textSize="22sp"
+            android:text="$0.00 Mxn"
+            android:textColor="@android:color/holo_green_dark"/>
+    </RelativeLayout>
+
+</LinearLayout>

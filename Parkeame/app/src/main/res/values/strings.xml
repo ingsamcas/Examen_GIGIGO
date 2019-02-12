@@ -1,0 +1,47 @@
+<resources>
+    <string name="sinInternet">"No se ha podido conectar con el servidor. Comprueba tu conexion a internet y vuelve a intentarlo"</string>
+    <string name="app_name">Parkeame</string>
+    <string name="databasename">DBParkeame.db3</string>
+    <string name="correo_electronico">Correo Electronico</string>
+    <string name="password">Password</string>
+    <string name="inicio_de_sesion">Inicio de Sesión</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="noEmailValid">Introduzca un email valido</string>
+    <string name="noPasswordValid">Introduzca un password</string>
+    <string name="credenciales_incorrectas">Credenciales no validas</string>
+    <string name="crear_cuenta"><u>Crear cuenta</u></string>
+    <string name="recuoerar_contrase_a"><u>Recuperar contraseña</u></string>
+
+    <array name="optionsDrawer">
+        <item name="Parkear">Parkear</item>
+        <item name="Mis_autos">Mis autos</item>
+        <item name="Pago">Pago</item>
+    </array>
+    <array name="Tipo">
+        <item name="Auto">Sedan</item>
+        <item name="Camion/Camioneta">Camioneta</item>
+        <item name="Minivan">Minivan</item>
+        <item name="Motocileta">Motocicleta</item>
+    </array>
+
+    <string name="ok">OK</string>
+    <string name="problema_con_cuenta">Al parecer hay un problema con tu cuenta.Ponte en contacto con nosotros a _____ para ayudarte</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+    <string name="credenciales_email_no_confirmado">Debes activar tu cuenta a traves del mail que te hemos enviado, si no lo encuentras podria haber llegado a tu spam.</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="agregar_m_todo_de_pago">Agregar método de pago</string>
+    <string name="pago">Pago</string>
+    <string name="databasename_autos">autos.db3</string>
+</resources>

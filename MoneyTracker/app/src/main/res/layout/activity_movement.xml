@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.Movement"
+    android:id="@+id/activity_movment">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:navigationIcon="?attr/homeAsUpIndicator" >
+
+            <Spinner
+                android:id="@+id/spinner_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownSelector="@android:drawable/ic_menu_more"/>
+
+
+            </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_alignParentTop="true"
+            android:id="@+id/activity_movment_progress"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:visibility="invisible">
+            <ProgressBar
+                android:id="@+id/activity_movment_progress_horizontal"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminate="true" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:id="@+id/adFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+        <ScrollView
+            android:layout_below="@+id/adFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:splitMotionEvents="true"
+            android:soundEffectsEnabled="true"
+            android:layout_marginLeft="0dp">
+            <fragment
+                android:id="@+id/movement_basicsFragment"
+                android:tag="BasicsFragment"
+                android:name="eclipseapps.financial.moneytracker.activities.Movement$MovementBasicsObjectFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+

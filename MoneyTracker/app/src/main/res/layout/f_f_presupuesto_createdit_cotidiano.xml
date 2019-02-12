@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/f_createdit_cotidiano_Root"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <eclipseapps.android.customviews.NumericRightToLeftEditText
+        android:id="@+id/f_cantidad"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".35"
+        android:background="@color/colorAccent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".65"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Periodo"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"/>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <eclipseapps.financial.moneytracker.customViews.SelectorCheckbox
+                    android:id="@+id/f_createdit_cotidiano_periodo"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diario"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="20sp"/>
+                <LinearLayout
+                    android:id="@+id/f_createdit_cotidiano_periodo_options_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccentLight"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cuentas"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"/>
+
+            <eclipseapps.financial.moneytracker.customViews.SelectorCheckbox
+                android:id="@+id/f_createdit_cotidiano_cuentas"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todas las cuentas"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccentLight"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoria"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"/>
+
+            <eclipseapps.financial.moneytracker.customViews.SelectorCheckbox
+                android:id="@+id/f_createdit_cotidiano_categorias"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todas las categorias"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

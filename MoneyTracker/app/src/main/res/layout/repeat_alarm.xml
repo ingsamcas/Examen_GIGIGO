@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/k_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="@dimen/detalles_cardelevation"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/k_label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Cada "
+            android:paddingBottom="10dp"/>
+        <EditText
+            android:id="@+id/k_editText1"
+            android:inputType="number"
+            android:minWidth="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/k_label2"
+            android:layout_alignBottom="@id/k_label2"
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal"
+            android:text="1"/>
+        <eclipseapps.financial.moneytracker.customViews.SelectorCheckbox
+            android:id="@+id/k_selector"
+            android:layout_toRightOf="@id/k_editText1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:layout_alignBottom="@id/k_label2"
+            android:background="@drawable/box"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="italic"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/k_btnaceptar"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/k_label2"
+            android:layout_alignParentEnd="true"
+
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aceptar"
+
+            android:textColor="@color/colorAccent"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

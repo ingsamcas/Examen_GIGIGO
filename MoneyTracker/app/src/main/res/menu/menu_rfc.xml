@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.MainActivity">
+
+    <item
+        android:id="@+id/action_borrar"
+        android:orderInCategory="100"
+        android:title="@string/action_edit"
+        android:visible="false"
+        android:icon="@mipmap/ic_delete_forever_white_24dp"
+        app:showAsAction="always" />
+
+
+</menu>

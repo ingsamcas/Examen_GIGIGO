@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Must be included for proper work of the cache. -->
+    <!-- Refer to the document https://developers.facebook.com/docs/audience-network/android-network-security-config -->
+
+
+
+    <domain-config>
+        <domain includeSubdomains="true">127.0.0.1</domain>//My own device
+        <domain includeSubdomains="true">149.56.79.124</domain>//Backendless API IP adress
+        <domain includeSubdomains="true">backendless.com</domain>
+    </domain-config>
+
+</network-security-config>

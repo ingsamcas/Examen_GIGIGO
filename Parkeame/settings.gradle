@@ -1,0 +1,7 @@
+include ':app',':libs',':libs2',':databases',':backendless',':pay','UIPay'
+project(':libs').projectDir=new File('/Users/usuario/AndroidStudioProjects/library/libs')
+project(':libs2').projectDir=new File('/Users/usuario/AndroidStudioProjects/library/libs2')
+project(':databases').projectDir=new File('/Users/usuario/AndroidStudioProjects/library/databases')
+project(':backendless').projectDir=new File('/Users/usuario/AndroidStudioProjects/library/backendless')
+project(':pay').projectDir=new File('/Users/usuario/AndroidStudioProjects/library/pay')
+project(':UIPay').projectDir=new File('/Users/usuario/AndroidStudioProjects/library/UIPayments')

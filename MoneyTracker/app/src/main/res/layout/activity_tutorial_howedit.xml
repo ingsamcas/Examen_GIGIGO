@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="@dimen/tutorial_circleremark_width"
+        android:layout_height="@dimen/tutorial_circleremark_height"
+        android:background="@drawable/quarter_circle_bottom_left"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/howedit_delete"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/fondo_circulo_verde"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src ="@mipmap/ic_mode_edit_white_24dp"
+                android:background="@android:color/transparent"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/howedit_delete"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/fondo_circulo_verde">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src ="@mipmap/ic_delete_forever_white_24dp"
+                android:background="@android:color/transparent"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/activity_tutorial_reveal"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/circle_dim"
+        android:layout_height="@dimen/circle_dim"
+        android:background="@android:color/transparent">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/baseline_touch_app_white_36"
+            android:background="@android:color/transparent"/>
+            >
+        <RelativeLayout
+            android:background="@drawable/fondo_circulo_verde_accent"
+            android:layout_width="@dimen/circle_dim"
+            android:layout_height="@dimen/circle_dim"
+            android:id="@+id/activity_tutorial_tip">
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent">
+        <eclipseapps.android.customviews.TextViewRoboto
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presiona para editar y borrar"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/tutorial_text_size"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/activity_tutorial_entendido"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Continuar"
+            android:textSize="19sp"
+            android:background="@drawable/quarter_circle_top_left"
+            android:textColor="@color/colorPrimary"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

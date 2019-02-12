@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="movementlist_descripcion_container" />
+    <item name="AndroidDatabseManager" type="id">299</item>
+</resources>

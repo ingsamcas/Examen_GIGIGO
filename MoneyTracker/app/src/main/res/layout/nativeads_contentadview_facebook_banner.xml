@@ -1,0 +1,146 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+    <TextView
+        android:id="@+id/nativeadsfacebookbanner_fecha_anuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="70sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:text=""
+        android:typeface="sans"
+        android:visibility="gone"
+
+        />
+
+    <TextView
+        android:id="@+id/nativeadsfacebookbanner_fecha_mes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:text=""
+        android:typeface="sans"
+        android:visibility="gone"
+
+        />
+    <LinearLayout
+        android:paddingLeft="@dimen/circle_marginleftRigth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:id="@+id/nativeadsfacebookbanner_sponsorlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/nativeadsfacebookbanner_adchoices"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </LinearLayout>
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/nativeadsfacebookbanner_list_group_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/circle_marginleftRigth"
+        android:layout_marginRight="@dimen/circle_marginleftRigth"
+        android:orientation="vertical"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="@dimen/detalles_cardelevation"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+            android:id="@+id/nativeadsfacebookbanner_frame"
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+
+            <com.facebook.ads.AdIconView
+                android:id="@+id/nativeadsfacebookbanner_canvas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:background="@color/colorAccentLight"/>
+
+            <ImageView
+                android:id="@+id/nativeadsfacebookbanner_mask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/maskwhite"
+                android:visibility="invisible"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/nativeadsfacebookbanner_body"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/nativeadsfacebookbanner_frame"
+            android:layout_toLeftOf="@+id/nativeadsfacebookbanner_ctabutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <eclipseapps.android.customviews.FontFitTextView
+                    android:id="@+id/nativeadsfacebookbanner_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <eclipseapps.android.customviews.FontFitTextView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:maxWidthPercent=".4"
+                app:robotofont="Roboto_Light"
+                android:id="@+id/nativeadsfacebookbanner_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+            <Button
+                android:lines="1"
+                android:id="@+id/nativeadsfacebookbanner_ctabutton"
+                android:layout_width="wrap_content"
+                android:minWidth="90dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginEnd="5dp"
+                android:textColor="@android:color/white"
+                android:text="Install"
+                android:background="@drawable/box_plus_price"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

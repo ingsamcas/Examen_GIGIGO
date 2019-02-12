@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/j_edit_container"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp">
+        <eclipseapps.android.customviews.FontFitTextView
+            app:robotofont="Roboto_Light"
+            android:id="@+id/j_edit_categoryname"
+            app:maxWidthPercent=".4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"/>
+        <RelativeLayout
+            android:layout_alignParentEnd="true"
+            android:id="@+id/j_delete_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/fondo_circulo_verde">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/ic_delete_forever_white_24dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/j_edit_editar"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/j_delete_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/box_plus_price"
+            android:padding="3dp"
+            android:gravity="center"
+            android:text="Editar"
+            android:textSize="20sp"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+   <RelativeLayout
+       android:id="@+id/j_list_container"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/j_edit_container">
+       <eclipseapps.android.customviews.ListViewMaxHeight
+
+
+           android:id="@+id/j_listview"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:maxHeightPercent=".6"/>
+       <View
+           android:layout_below="@+id/j_listview"
+           android:layout_width="match_parent"
+           android:layout_height="3dp"
+           android:layout_marginTop="10dp"
+           android:background="@color/colorAccentLight"/>
+       <TextView
+           android:id="@+id/j_pluscategory"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/j_listview"
+           android:layout_alignParentStart="true"
+           android:layout_marginTop="15dp"
+           android:textSize="20sp"
+           android:textColor="@color/colorAccent"
+           android:text="Agregar categoría"/>
+   </RelativeLayout>
+
+</RelativeLayout>

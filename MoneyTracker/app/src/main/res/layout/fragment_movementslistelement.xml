@@ -1,0 +1,282 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:weightSum="1"
+    >
+
+ <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:weightSum="1"
+    android:id="@+id/fragment_movementslistelemnt_elemnt">
+
+	 <FrameLayout
+		 android:layout_width="match_parent"
+		 android:layout_height="match_parent"
+		 android:layout_marginTop="@dimen/movslistelement_margintop"
+		 android:clipChildren="false">
+
+		 <RelativeLayout
+			 android:id="@id/movementlist_descripcion_container"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent"
+			 android:layout_marginLeft="@dimen/circle_dim">
+
+			 <LinearLayout
+
+				 android:id="@+id/movementlist_descripcion"
+				 android:layout_width="match_parent"
+				 android:layout_height="wrap_content"
+				 android:layout_centerVertical="true"
+				 android:layout_marginBottom="@dimen/description_marginbottom"
+				 android:layout_marginRight="10dp"
+				 android:layout_marginLeft="10dp"
+				 android:layout_marginTop="@dimen/description_margintop"
+				 android:orientation="horizontal"
+				 >
+
+				 <TextView
+					 android:id="@+id/movementlist_descripcion_text"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_gravity="center_horizontal"
+					 android:elegantTextHeight="true"
+					 android:ellipsize="end"
+					 android:fontFamily="casual"
+					 android:gravity="center"
+					 android:maxLines="6"
+					 android:text="Descripcion"
+					 android:textColor="@color/colorPrimary"
+					 android:textSize="13sp"
+					 android:textStyle="bold" />
+			 </LinearLayout>
+		 </RelativeLayout>
+
+		 <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+			 android:id="@+id/detalles"
+			 android:layout_width="@dimen/circle_dim"
+			 android:layout_height="@dimen/circle_dim"
+			 android:layout_gravity="center_vertical"
+			 android:layout_marginBottom="@dimen/circle_marginbottom"
+			 android:layout_marginLeft="@dimen/circle_marginleftRigth"
+			 android:layout_marginRight="@dimen/circle_marginleftRigth"
+			 android:orientation="vertical"
+			 card_view:cardBackgroundColor="@android:color/white"
+			 card_view:cardCornerRadius="@dimen/radius"
+			 card_view:cardElevation="@dimen/detalles_cardelevation"
+			 card_view:cardPreventCornerOverlap="false"
+			 card_view:cardUseCompatPadding="true">
+
+			 <RelativeLayout
+				 android:id="@+id/trending_canvas"
+				 android:layout_width="match_parent"
+				 android:layout_height="match_parent"
+				 android:layout_gravity="center"
+				 android:layout_marginTop="@dimen/circle_innermargintop"
+				 android:weightSum="1"
+				 android:background="@drawable/ic_trending_up_black_240dp">
+
+				 <TextView
+					 android:id="@+id/fragment_movementslistelemnt_cuenta"
+					 android:layout_width="90dp"
+					 android:layout_height="30dp"
+					 android:layout_centerHorizontal="true"
+					 android:layout_marginBottom="@dimen/movlistelement_titlecuenta_marginbottom"
+					 android:layout_marginLeft="5dp"
+					 android:layout_marginRight="5dp"
+					 android:gravity="center"
+					 android:text="Cuenta"
+					 android:textColor="@color/colorPrimary"
+					 android:textSize="@dimen/movmentlistelement_cuenta_textsize"
+					 android:textStyle="bold"
+					 android:typeface="sans" />
+
+				 <RelativeLayout
+					 android:id="@+id/cantidad"
+					 android:layout_width="match_parent"
+					 android:layout_height="wrap_content"
+					 android:layout_below="@+id/fragment_movementslistelemnt_cuenta"
+					 android:layout_centerInParent="true">
+
+					 <FrameLayout
+						 android:id="@+id/cantidad_contenedor"
+						 android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:layout_marginBottom="@dimen/cantidad_marginbottom"
+						 android:layout_marginLeft="@dimen/cantidad_marginlr"
+						 android:layout_marginRight="@dimen/cantidad_marginlr">
+
+
+						 <RelativeLayout
+							 android:layout_width="match_parent"
+							 android:layout_height="@dimen/fondocantidad_altura"
+							 android:layout_marginLeft="@dimen/cantidad_marginlr"
+							 android:layout_marginRight="@dimen/cantidad_marginlr">
+							 <eclipseapps.android.customviews.FontFitTextView
+								 android:id="@+id/cantidad_enteros"
+								 android:layout_width="wrap_content"
+								 android:layout_height="wrap_content"
+								 android:layout_centerInParent="true"
+								 android:layout_marginLeft="5dp"
+								 android:gravity="center"
+								 android:text="45"
+								 android:textSize="20sp"
+								 android:textColor="@color/colorPrimary"
+								android:lines="1"
+								 android:textStyle="bold"
+								 android:typeface="sans" />
+
+							 <TextView
+								 android:id="@+id/cantidad_decimales"
+								 android:layout_width="wrap_content"
+								 android:layout_height="wrap_content"
+								 android:layout_centerInParent="true"
+								 android:layout_alignParentTop="true"
+								 android:layout_toRightOf="@+id/cantidad_enteros"
+								 android:gravity="center"
+								 android:text="00"
+								 android:textColor="@color/colorPrimary"
+								 android:textSize="10sp"
+								 android:textStyle="bold"
+								 android:lines="1"
+								 android:typeface="serif" />
+
+							 <ImageView
+								 android:id="@+id/movementlist_attachment_icon"
+								 android:layout_width="25dp"
+								 android:layout_height="25dp"
+								 android:layout_alignParentRight="true"
+								 android:layout_gravity="center_vertical"
+								 android:layout_marginLeft="10dp"
+								 android:layout_marginTop="8dp"
+								 android:layout_toRightOf="@+id/cantidad_decimales"
+								 android:src="@drawable/icon_spinner" />
+						 </RelativeLayout>
+					 </FrameLayout>
+
+					 <HorizontalScrollView
+						 android:id="@+id/contenedor_tags_scroll"
+						 android:layout_width="match_parent"
+						 android:layout_height="@dimen/movselement_tagscontainer_height"
+						 android:layout_below="@+id/cantidad_contenedor"
+						 android:layout_marginTop="@dimen/movlistelement_titlecuenta_marginbottom">
+
+						 <LinearLayout
+							 android:id="@+id/contenedor_tags"
+							 android:layout_width="wrap_content"
+							 android:layout_height="match_parent"
+							 android:orientation="horizontal" />
+					 </HorizontalScrollView>
+					 <TextView
+						 android:id="@+id/movementlistelement_facturasolicitada"
+						 android:layout_marginTop="@dimen/movlistelement_rfctag_margintop"
+						 android:layout_below="@+id/contenedor_tags_scroll"
+						 android:layout_width="wrap_content"
+						 android:layout_height="wrap_content"
+						 android:textSize="9sp"
+						 android:textColor="@color/cardview_light_background"
+						 android:visibility="gone"
+						 android:background="@color/colorAccent"/>
+				 </RelativeLayout>
+			 </RelativeLayout>
+		 </android.support.v7.widget.CardView>
+
+		 <RelativeLayout
+			 android:layout_width="@dimen/circle_dim_overview"
+			 android:layout_height="@dimen/circle_dim_overview"
+			 android:layout_gravity="center_vertical"
+			 android:layout_marginBottom="@dimen/circle_marginbottom"
+			 android:layout_marginLeft="@dimen/circle_marginleft"
+			 android:translationZ="10dp">
+			 <LinearLayout
+				 android:layout_centerInParent="true"
+				 android:layout_alignParentBottom="true"
+				 android:layout_marginBottom="@dimen/movlist_hour_marginbottom"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:orientation="horizontal"
+				 android:id="@+id/movementlist_time">
+				 <ImageView
+					 android:id="@+id/movementlist_time_icon"
+					 android:src="@drawable/icon_time"
+					 android:layout_width="18dp"
+					 android:layout_height="18dp"
+					 />
+				 <TextView
+					 android:id="@+id/movementlist_time_text"
+					 android:layout_width="wrap_content"
+					 android:layout_height="wrap_content"
+					 android:textColor="@color/colorAccent"
+					 android:text="8:00 am"
+					 android:textSize="10sp"
+					 android:layout_gravity="center_vertical"
+					 android:gravity="center"/>
+			 </LinearLayout>
+			 <FrameLayout
+				 android:id="@+id/movementlist_facturacontenedor"
+				 android:layout_width="@dimen/movslistelement_subcircles"
+				 android:layout_height="@dimen/movslistelement_subcircles"
+				 android:layout_marginLeft="5dp"
+				 android:layout_alignParentBottom="true"
+				 android:layout_alignParentStart="true">
+
+				 <ImageView
+					 android:id="@+id/movementlist_facturafondo"
+					 android:layout_width="match_parent"
+					 android:layout_height="match_parent"
+					 android:src="@drawable/fondo_circulo_verde" />
+
+				 <RelativeLayout
+					 android:layout_width="match_parent"
+					 android:layout_height="match_parent">
+
+					 <ImageView
+						 android:id="@+id/movementlist_factura"
+						 android:layout_width="@dimen/listviewelement_subcircle_imagesize_width"
+						 android:layout_height="@dimen/listviewelement_subcircle_imagesize_height"
+						 android:layout_centerHorizontal="true"
+						 android:src="@drawable/ic_description_black_36dp"/>
+					 <TextView
+						 android:gravity="center"
+						 android:layout_below="@+id/movementlist_factura"
+						 android:layout_centerHorizontal="true"
+						 android:layout_width="wrap_content"
+						 android:layout_height="wrap_content"
+						 android:textColor="@color/cardview_light_background"
+						 android:textSize="@dimen/facturar_a_dimen"
+						 android:text="Factura\n PDF/XML"/>
+				 </RelativeLayout>
+			 </FrameLayout>
+			 <FrameLayout
+				 android:id="@+id/movementlist_fotoscontenedor"
+				 android:layout_width="@dimen/movslistelement_subcircles"
+				 android:layout_height="@dimen/movslistelement_subcircles"
+				 android:layout_alignParentBottom="true"
+				 android:layout_alignParentEnd="true">
+
+				 <ImageView
+					 android:id="@+id/movementlist_fotosfondo"
+					 android:layout_width="match_parent"
+					 android:layout_height="match_parent"
+					 android:src="@drawable/photos_icon" />
+
+				 <RelativeLayout
+					 android:layout_width="match_parent"
+					 android:layout_height="match_parent">
+
+					 <ImageView
+						 android:id="@+id/movementlist_images"
+						 android:layout_width="@dimen/listviewelement_subcircle_imagesize_width"
+						 android:layout_height="@dimen/listviewelement_subcircle_imagesize_height"
+						 android:layout_centerInParent="true"
+						 android:background="@android:color/white" />
+				 </RelativeLayout>
+			 </FrameLayout>
+		 </RelativeLayout>
+	 </FrameLayout>
+ </LinearLayout>
+</LinearLayout>
